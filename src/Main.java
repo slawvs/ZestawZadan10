@@ -7,9 +7,9 @@ public class Main {
 		kulfon ref = new kulfon();
 		Thread refT = new Thread(ref);
 		refT.start();
+		Random randomGenerator = new Random();
 		for(int i=0;i<40;i++)
 		{
-			Random randomGenerator = new Random();
 			int randomInt = randomGenerator.nextInt(100);
 			ref.naszaLiczba = randomInt;
 			Thread.sleep(1000);
